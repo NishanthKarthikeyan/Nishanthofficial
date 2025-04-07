@@ -50,16 +50,19 @@
   <header>
     <h1>Welcome to Nishanth's Website</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="certificates.html">Certificates</a>
-      <a href="achievements.html">Achievements</a>
+      <nav>
+        <a href="/">Home</a>
+        <a href="/certificates">Certificates</a>
+        <a href="/achievements">Achievements</a>
+      </nav>
+      
     </nav>
   </header>
 
   <section>
     <h2>About Me</h2>
     <div class="profile-container">
-      <img src="pic.jpg" alt="Nishanth Profile" class="profile-img" />
+      <img src="{{ url_for('static', filename='images/pic.jpg') }}" alt="Nishanth Profile" class="profile-img" />
       <div class="profile-details">
         <p><strong>Name:</strong> Nishanth</p>
         <p><strong>Email:</strong> knhnishanth@gmail.com</p>
